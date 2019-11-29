@@ -13,4 +13,12 @@ public class K8SController {
     public String k8s(){
         return "hello K8s lly";
     }
+
+
+
+
+    @RequestMapping("/test")
+    public String test(){
+        return "内存共计:" + (Runtime.getRuntime().totalMemory() / 1024 /1024) + "M";
+    }
 }
