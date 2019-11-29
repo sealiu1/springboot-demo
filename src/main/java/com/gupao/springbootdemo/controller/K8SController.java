@@ -25,4 +25,11 @@ public class K8SController {
         sb.append("内存最大: " + (Runtime.getRuntime().maxMemory() /1024 /1024) + "M");
         return sb.toString();
     }
+
+
+
+    @RequestMapping("/query")
+    public String query(){
+        return "query method";
+    }
 }
